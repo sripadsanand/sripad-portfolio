@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 92%;
+
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 92%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 92%;
+
+    --primary: 235 100% 65%;
+    --primary-foreground: 0 0% 92%;
+
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 92%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 235 100% 65%;
+    --accent-foreground: 0 0% 92%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 92%;
+
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 235 100% 65%;
+
+    --radius: 0.25rem;
+
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 92%;
+    --sidebar-primary: 235 100% 65%;
+    --sidebar-primary-foreground: 0 0% 92%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 92%;
+    --sidebar-border: 0 0% 14%;
+    --sidebar-ring: 235 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .tracking-display {
+    letter-spacing: 0.1em;
+  }
+
+  .text-optical {
+    color: hsl(0 0% 92%);
+  }
+
+  .bg-obsidian {
+    background-color: #000000;
+  }
+
+  .glow-cobalt {
+    box-shadow: 0 0 30px -5px hsl(235 100% 65% / 0.4),
+                0 0 60px -10px hsl(235 100% 65% / 0.2);
+  }
+
+  .section-snap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+
+@layer utilities {
+  .marquee {
+    animation: marquee 40s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes float-particle {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+    25% { transform: translate(10px, -20px) scale(1.1); opacity: 0.6; }
+    50% { transform: translate(-5px, -40px) scale(0.9); opacity: 0.4; }
+    75% { transform: translate(15px, -20px) scale(1.05); opacity: 0.5; }
+  }
+
+  .animate-float-particle {
+    animation: float-particle var(--duration, 8s) ease-in-out infinite;
+    animation-delay: var(--delay, 0s);
+  }
+}
