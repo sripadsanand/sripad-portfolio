@@ -41,18 +41,18 @@ const HeroSection = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} id="hero" className="section-snap min-h-screen justify-center bg-background relative overflow-hidden">
-      <motion.div style={{ y: particleY }} className="absolute inset-0">
+    <section ref={ref} id="hero" className="section-snap min-h-[100dvh] flex flex-col items-center justify-center bg-background relative overflow-hidden">
+      <motion.div style={{ y: particleY }} className="absolute inset-0 z-0">
         <Particles />
       </motion.div>
-      <motion.div style={{ opacity }} className="relative z-10 text-center w-full px-4">
+      <motion.div style={{ opacity }} className="relative z-20 flex flex-col items-center justify-center text-center w-full px-4 sm:px-6 md:px-8">
         <TextReveal>
-          <h1 className="font-display text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-light uppercase tracking-display text-foreground">
+          <h1 className="font-display text-[clamp(2rem,8vw,6rem)] leading-tight font-light uppercase tracking-display text-foreground max-w-full overflow-hidden text-ellipsis whitespace-nowrap sm:whitespace-normal">
             Sripad S Anand
           </h1>
         </TextReveal>
         <TextReveal delay={0.3}>
-          <p className="mt-8 text-xs sm:text-sm tracking-[0.2em] uppercase text-muted-foreground font-body">
+          <p className="mt-4 sm:mt-6 md:mt-8 text-[10px] sm:text-xs md:text-sm tracking-[0.15em] sm:tracking-[0.2em] uppercase text-muted-foreground font-body max-w-full px-2 text-center">
             AI & Data Science Enthusiast
           </p>
         </TextReveal>
