@@ -1,73 +1,46 @@
-# Welcome to your Lovable project
+# Sripad S Anand | Interactive Portfolio
 
-## Project info
+A cinematic, dark-themed personal portfolio designed to showcase projects and experience in Software Development and Data Science. Inspired by immersive digital art exhibitions, this site features smooth scroll animations, a minimalist interface, and full-screen media environments.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
+* **Immersive UI/UX:** Pitch-black background with subtle scroll-triggered animations and micro-interactions.
+* **Responsive Layout:** Fluid design that adapts perfectly from desktop to mobile, including a sleek sliding navigation menu.
+* **Project Showcase:** Detailed breakdowns of machine learning and software engineering projects, including real-time hand gesture recognition systems.
+* **Modern Tooling:** Built for speed, scalability, and maintainability using a modern frontend stack.
 
-## How can I edit this code?
+## Tech Stack
+This project is built with a robust, modern frontend architecture:
+- [cite_start]**React** [cite: 1]
+- [cite_start]**Vite** [cite: 1]
+- [cite_start]**TypeScript** [cite: 1]
+- [cite_start]**Tailwind CSS** [cite: 1]
+- [cite_start]**shadcn-ui** [cite: 1]
 
-There are several ways of editing your application.
+## Local Development
 
-**Use Lovable**
+[cite_start]To run this project locally, ensure you have Node.js and npm installed[cite: 1]. 
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+**1. Clone the repository**
+\`\`\`bash
+git clone https://github.com/your-username/sripad-portfolio.git
+cd sripad-portfolio
+\`\`\`
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+**2. Install dependencies**
+\`\`\`bash
 npm i
+\`\`\`
+[cite_start][cite: 1]
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+**3. Start the development server**
+\`\`\`bash
 npm run dev
-```
+\`\`\`
+[cite_start][cite: 1]
+[cite_start]The local server will start with auto-reloading and an instant preview[cite: 1].
 
-**Edit a file directly in GitHub**
+## Deployment
+This project is optimized for deployment on modern edge networks like Vercel or Netlify. Simply connect the main branch of this repository to your preferred hosting provider for automatic deployments on push.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## License
+&copy; 2026 Sripad S Anand. All rights reserved.
