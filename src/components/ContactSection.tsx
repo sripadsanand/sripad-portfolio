@@ -49,6 +49,18 @@ const ContactSection = () => (
             linkedin.com/in/sripadsanand
           </a>
         </MagneticWrap>
+        <MagneticWrap>
+          <a
+            href="https://github.com/sripadsanand"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Sripad S Anand GitHub profile"
+            className="hover:text-accent transition-colors duration-300 flex items-center gap-2"
+          >
+            github.com/sripadsanand
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </MagneticWrap>
       </motion.div>
 
       <div className="mt-20 md:mt-24 pb-8 text-xs text-muted-foreground/50 font-body tracking-[0.1em] uppercase">

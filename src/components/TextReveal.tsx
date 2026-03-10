@@ -10,9 +10,9 @@ interface TextRevealProps {
 const TextReveal = ({ children, className = "", delay = 0 }: TextRevealProps) => (
   <div className={`overflow-hidden ${className}`}>
     <motion.div
-      initial={{ y: "100%", opacity: 0 }}
+      initial={{ y: 40, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{
         duration: 0.8,
         delay,

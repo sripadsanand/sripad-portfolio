@@ -41,7 +41,7 @@ const HeroSection = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} id="hero" className="section-snap justify-center bg-background relative overflow-hidden">
+    <section ref={ref} id="hero" className="section-snap min-h-screen justify-center bg-background relative overflow-hidden">
       <motion.div style={{ y: particleY }} className="absolute inset-0">
         <Particles />
       </motion.div>
@@ -52,15 +52,15 @@ const HeroSection = () => {
           </h1>
         </TextReveal>
         <TextReveal delay={0.3}>
-          <p className="mt-6 text-xs sm:text-base tracking-[0.2em] uppercase text-muted-foreground font-body">
-            Software Development & Data Science
+          <p className="mt-8 text-xs sm:text-sm tracking-[0.2em] uppercase text-muted-foreground font-body">
+            AI & Data Science Enthusiast
           </p>
         </TextReveal>
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1.5, delay: 1.4 }}
-          className="mt-8 mx-auto h-px w-24 bg-accent origin-center"
+          className="mt-10 mx-auto h-px w-24 bg-accent origin-center"
         />
       </motion.div>
     </section>

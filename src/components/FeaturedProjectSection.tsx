@@ -49,7 +49,7 @@ const FeaturedProjectSection = () => {
           <div className="space-y-4 max-w-[55ch]">
             <TextReveal delay={0.2}>
               <p className="text-foreground/85 text-sm sm:text-base leading-relaxed font-body font-light">
-                Developed a real-time hand gesture recognition system using Motion History Images (MHI) 
+                Engineered a real-time hand gesture recognition system using Motion History Images (MHI) 
                 and Convolutional Neural Networks (CNN) for accurate sign language prediction in 
                 human-computer interaction.
               </p>
